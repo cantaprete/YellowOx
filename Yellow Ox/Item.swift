@@ -1,6 +1,6 @@
 //
 //  Item.swift
-//  YellowOx
+//  Yellow Ox
 //
 //  Created by Jacopo Donati on 09/01/26.
 //

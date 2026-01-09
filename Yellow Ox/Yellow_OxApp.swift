@@ -1,6 +1,6 @@
 //
-//  YellowOxApp.swift
-//  YellowOx
+//  Yellow_OxApp.swift
+//  Yellow Ox
 //
 //  Created by Jacopo Donati on 09/01/26.
 //
@@ -9,7 +9,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct YellowOxApp: App {
+struct Yellow_OxApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,

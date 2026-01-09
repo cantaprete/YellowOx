@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		1FCFE5F62F110FE2007057EE /* YellowOx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YellowOx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7E7A282F1114D4005D4AAC /* Yellow Ox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yellow Ox.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		1FCFE6032F110FE4007057EE /* Exceptions for "YellowOx" folder in "YellowOx" target */ = {
+		1F7E7A352F1114D5005D4AAC /* Exceptions for "Yellow Ox" folder in "Yellow Ox" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 1FCFE5F52F110FE2007057EE /* YellowOx */;
+			target = 1F7E7A272F1114D4005D4AAC /* Yellow Ox */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1FCFE5F82F110FE2007057EE /* YellowOx */ = {
+		1F7E7A2A2F1114D4005D4AAC /* Yellow Ox */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				1FCFE6032F110FE4007057EE /* Exceptions for "YellowOx" folder in "YellowOx" target */,
+				1F7E7A352F1114D5005D4AAC /* Exceptions for "Yellow Ox" folder in "Yellow Ox" target */,
 			);
-			path = YellowOx;
+			path = "Yellow Ox";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FCFE5F32F110FE2007057EE /* Frameworks */ = {
+		1F7E7A252F1114D4005D4AAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FCFE5ED2F110FE2007057EE = {
+		1F7E7A1F2F1114D4005D4AAC = {
 			isa = PBXGroup;
 			children = (
-				1FCFE5F82F110FE2007057EE /* YellowOx */,
-				1FCFE5F72F110FE2007057EE /* Products */,
+				1F7E7A2A2F1114D4005D4AAC /* Yellow Ox */,
+				1F7E7A292F1114D4005D4AAC /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1FCFE5F72F110FE2007057EE /* Products */ = {
+		1F7E7A292F1114D4005D4AAC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FCFE5F62F110FE2007057EE /* YellowOx.app */,
+				1F7E7A282F1114D4005D4AAC /* Yellow Ox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,64 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FCFE5F52F110FE2007057EE /* YellowOx */ = {
+		1F7E7A272F1114D4005D4AAC /* Yellow Ox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FCFE6042F110FE4007057EE /* Build configuration list for PBXNativeTarget "YellowOx" */;
+			buildConfigurationList = 1F7E7A362F1114D5005D4AAC /* Build configuration list for PBXNativeTarget "Yellow Ox" */;
 			buildPhases = (
-				1FCFE5F22F110FE2007057EE /* Sources */,
-				1FCFE5F32F110FE2007057EE /* Frameworks */,
-				1FCFE5F42F110FE2007057EE /* Resources */,
+				1F7E7A242F1114D4005D4AAC /* Sources */,
+				1F7E7A252F1114D4005D4AAC /* Frameworks */,
+				1F7E7A262F1114D4005D4AAC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1FCFE5F82F110FE2007057EE /* YellowOx */,
+				1F7E7A2A2F1114D4005D4AAC /* Yellow Ox */,
 			);
-			name = YellowOx;
+			name = "Yellow Ox";
 			packageProductDependencies = (
 			);
-			productName = YellowOx;
-			productReference = 1FCFE5F62F110FE2007057EE /* YellowOx.app */;
+			productName = "Yellow Ox";
+			productReference = 1F7E7A282F1114D4005D4AAC /* Yellow Ox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FCFE5EE2F110FE2007057EE /* Project object */ = {
+		1F7E7A202F1114D4005D4AAC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 2620;
 				LastUpgradeCheck = 2620;
 				TargetAttributes = {
-					1FCFE5F52F110FE2007057EE = {
+					1F7E7A272F1114D4005D4AAC = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
 			};
-			buildConfigurationList = 1FCFE5F12F110FE2007057EE /* Build configuration list for PBXProject "YellowOx" */;
+			buildConfigurationList = 1F7E7A232F1114D4005D4AAC /* Build configuration list for PBXProject "Yellow Ox" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 1FCFE5ED2F110FE2007057EE;
+			mainGroup = 1F7E7A1F2F1114D4005D4AAC;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 1FCFE5F72F110FE2007057EE /* Products */;
+			productRefGroup = 1F7E7A292F1114D4005D4AAC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FCFE5F52F110FE2007057EE /* YellowOx */,
+				1F7E7A272F1114D4005D4AAC /* Yellow Ox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1FCFE5F42F110FE2007057EE /* Resources */ = {
+		1F7E7A262F1114D4005D4AAC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -128,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FCFE5F22F110FE2007057EE /* Sources */ = {
+		1F7E7A242F1114D4005D4AAC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -138,97 +138,81 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		1FCFE6052F110FE4007057EE /* Debug */ = {
+		1F7E7A372F1114D5005D4AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yellow Ox/Yellow_Ox.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5W89KNYX79;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YellowOx/Info.plist;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = "Yellow Ox/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yellow Ox";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = it.jacopodonati.YellowOx;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.jacopodonati.Yellow-Ox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		1FCFE6062F110FE4007057EE /* Release */ = {
+		1F7E7A382F1114D5005D4AAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Yellow Ox/Yellow_Ox.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5W89KNYX79;
-				ENABLE_APP_SANDBOX = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
-				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = YellowOx/Info.plist;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_FILE = "Yellow Ox/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Yellow Ox";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.7;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = it.jacopodonati.YellowOx;
+				PRODUCT_BUNDLE_IDENTIFIER = "it.jacopodonati.Yellow-Ox";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				REGISTER_APP_GROUPS = YES;
-				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 26.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		1FCFE6072F110FE4007057EE /* Debug */ = {
+		1F7E7A392F1114D5005D4AAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -281,16 +265,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		1FCFE6082F110FE4007057EE /* Release */ = {
+		1F7E7A3A2F1114D5005D4AAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -337,35 +323,38 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.2;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FCFE5F12F110FE2007057EE /* Build configuration list for PBXProject "YellowOx" */ = {
+		1F7E7A232F1114D4005D4AAC /* Build configuration list for PBXProject "Yellow Ox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FCFE6072F110FE4007057EE /* Debug */,
-				1FCFE6082F110FE4007057EE /* Release */,
+				1F7E7A392F1114D5005D4AAC /* Debug */,
+				1F7E7A3A2F1114D5005D4AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FCFE6042F110FE4007057EE /* Build configuration list for PBXNativeTarget "YellowOx" */ = {
+		1F7E7A362F1114D5005D4AAC /* Build configuration list for PBXNativeTarget "Yellow Ox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FCFE6052F110FE4007057EE /* Debug */,
-				1FCFE6062F110FE4007057EE /* Release */,
+				1F7E7A372F1114D5005D4AAC /* Debug */,
+				1F7E7A382F1114D5005D4AAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1FCFE5EE2F110FE2007057EE /* Project object */;
+	rootObject = 1F7E7A202F1114D4005D4AAC /* Project object */;
 }
