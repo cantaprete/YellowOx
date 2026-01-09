@@ -21,6 +21,7 @@ struct ContentView: View {
                 .background(Color.red)
                 .foregroundColor(.white)
                 .cornerRadius(10)
+                .font(.title)
             
             Spacer()
             
@@ -44,6 +45,7 @@ struct ContentView: View {
                 .background(lines.count < maxLines ? Color.blue : Color.gray)
                 .foregroundColor(.white)
                 .cornerRadius(10)
+                .font(.title)
                 .disabled(lines.count >= maxLines)
         }
     }
