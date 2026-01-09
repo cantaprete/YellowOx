@@ -32,8 +32,12 @@ struct ContentView: View {
             
             Button("Lancia") {
                 if lines.count < maxLines {
-                    let line = Int.random(in: 6...9)
-                    lines.append(line)
+                    Task {
+                        let line = await CoinLauncher.launchCoins()
+                        await MainActor.run {
+                            lines.append(line)
+                        }
+                    }
                 }
             }
                 .padding()
