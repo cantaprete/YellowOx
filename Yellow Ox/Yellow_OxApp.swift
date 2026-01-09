@@ -12,7 +12,7 @@ import SwiftData
 struct Yellow_OxApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            QueryView()
         }
     }
 }

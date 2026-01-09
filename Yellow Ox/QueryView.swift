@@ -8,9 +8,10 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct QueryView: View {
     @State private var lines: [Int] = []
     private let maxLines = 6
+    @State private var response: Response?
 
     var body: some View {
         VStack {
@@ -25,9 +26,13 @@ struct ContentView: View {
             
             Spacer()
             
-            Text(lines.isEmpty ? "…" : lines.map { String($0) }.joined(separator: ", "))
-                            .font(.largeTitle)
-                            .padding()
+            if lines.count < maxLines {
+                Text(lines.isEmpty ? "…" : lines.map { String($0) }.joined(separator: ", "))
+                    .font(.title)
+                    .padding()
+            } else {
+                ResponseView(response: response!)
+            }
             
             Spacer()
             
@@ -37,6 +42,9 @@ struct ContentView: View {
                         let line = await CoinLauncher.launchCoins()
                         await MainActor.run {
                             lines.append(line)
+                            if lines.count == maxLines {
+                                response = Response(rawResponse: lines)
+                            }
                         }
                     }
                 }
@@ -52,5 +60,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    QueryView()
 }
