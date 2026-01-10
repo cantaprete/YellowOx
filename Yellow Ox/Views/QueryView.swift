@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import SwiftData
 
 struct QueryView: View {
     @State private var lines: [Int] = []
@@ -22,19 +21,12 @@ struct QueryView: View {
                 .background(Color.red)
                 .foregroundColor(.white)
                 .cornerRadius(10)
-                .font(.title)
-            
-            Spacer()
             
             if lines.count < maxLines {
-                Text(lines.isEmpty ? "…" : lines.map { String($0) }.joined(separator: ", "))
-                    .font(.title)
-                    .padding()
+                HexagramView(lines: lines)
             } else {
                 ResponseView(response: response!)
             }
-            
-            Spacer()
             
             Button("Lancia") {
                 if lines.count < maxLines {
@@ -53,7 +45,6 @@ struct QueryView: View {
                 .background(lines.count < maxLines ? Color.blue : Color.gray)
                 .foregroundColor(.white)
                 .cornerRadius(10)
-                .font(.title)
                 .disabled(lines.count >= maxLines)
         }
     }

@@ -11,7 +11,9 @@ struct ResponseView: View {
     let response: Response
     
     var body: some View {
-        Text(response.rawResponse.map { String($0) }.joined(separator: ", "))
+        HexagramView(lines: response.rawResponse)
+        
+        Spacer()
         
         Text(response.primaryHexagram.number.description)
         Text(response.primaryHexagram.name)
