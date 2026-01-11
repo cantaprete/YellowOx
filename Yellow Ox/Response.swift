@@ -43,4 +43,14 @@ class Response {
         self.primaryHexagram = tempPrimaryHexagram
         self.secondaryHexagram = tempSecondaryHexagram
     }
+    
+    func getMovingLines() -> [Int] {
+        var movingLines: [Int] = []
+        for (index, line) in self.rawResponse.enumerated() {
+            if line == 6 || line == 9 {
+                movingLines.append(index + 1)
+            }
+        }
+        return movingLines
+    }
 }

@@ -14,38 +14,50 @@ struct QueryView: View {
 
     var body: some View {
         VStack {
-            Button("Reimposta") {
-                lines.removeAll()
-            }
+            Text(lines.count == maxLines ? "Responso" : "Poni la tua domanda")
+                .font(.title)
+                .bold()
+                .frame(maxWidth: .infinity, alignment: .leading)
                 .padding()
-                .background(Color.red)
-                .foregroundColor(.white)
-                .cornerRadius(10)
+            Spacer()
             
             if lines.count < maxLines {
                 HexagramView(lines: lines)
+                    .scaleEffect(0.8)
             } else {
                 ResponseView(response: response!)
             }
             
-            Button("Lancia") {
-                if lines.count < maxLines {
-                    Task {
-                        let line = await CoinLauncher.launchCoins()
-                        await MainActor.run {
-                            lines.append(line)
-                            if lines.count == maxLines {
-                                response = Response(rawResponse: lines)
+            Spacer()
+            
+            HStack {
+                Spacer()
+                
+                Button("Reimposta") {
+                    lines.removeAll()
+                }
+                .foregroundStyle(.red)
+                
+                Spacer()
+                
+                Button("Lancia") {
+                    if lines.count < maxLines {
+                        Task {
+                            let line = await CoinLauncher.launchCoins()
+                            await MainActor.run {
+                                lines.append(line)
+                                if lines.count == maxLines {
+                                    response = Response(rawResponse: lines)
+                                }
                             }
                         }
                     }
                 }
+                    .disabled(lines.count >= maxLines)
+                
+                Spacer()
             }
-                .padding()
-                .background(lines.count < maxLines ? Color.blue : Color.gray)
-                .foregroundColor(.white)
-                .cornerRadius(10)
-                .disabled(lines.count >= maxLines)
+            .padding(20)
         }
     }
 }

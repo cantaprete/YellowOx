@@ -10,71 +10,54 @@ import SwiftUI
 struct Line: View {
     @State private var lineType: LineType
     @State private var isChanging: Bool
-    private let segmentHeight: CGFloat = 28
-    private var segmentWidth: CGFloat
+    private let radius: CGFloat = 20
     
     init(number: Int) {
         switch number {
         case 6:
             lineType = .yin
             isChanging = true
-            segmentWidth = 104
-        case 7:
+        case 7, 1:
             lineType = .yang
             isChanging = false
-            segmentWidth = 270
-        case 8:
+        case 8, 0:
             lineType = .yin
             isChanging = false
-            segmentWidth = 104
         case 9:
             lineType = .yang
             isChanging = true
-            segmentWidth = 270
         default:
             lineType = .unset
             isChanging = false
-            segmentWidth = 0
         }
     }
     
     var body: some View {
-        HStack(spacing: 0) {
-            if lineType == .yin {
+        GeometryReader { geometry in
+            let width = geometry.size.width
+            let height = geometry.size.height
+            let cornerRadius = CGSize(width: min(width, height) / radius, height: min(width, height) / radius)
+            switch lineType {
+            case .unset:
                 Rectangle()
-                    .frame(width: segmentWidth, height: segmentHeight)
-                    .foregroundStyle(.foreground)
-                Rectangle()
-                    .frame(width: 62, height: segmentHeight)
-                    .foregroundStyle(.background.opacity(0))
-                    .overlay(
-                        isChanging ?
-                            Rectangle()
-                                .rotation(Angle(degrees: 45))
-                                .frame(width: 70, height: 20)
-                                .foregroundStyle(.red)
-                                .overlay(
-                                        Rectangle()
-                                            .rotation(Angle(degrees: -45))
-                                            .frame(width: 70, height: 20)
-                                            .foregroundStyle(.red)
-                                )
-                        : nil
-                    )
-                Rectangle()
-                    .frame(width: segmentWidth, height: segmentHeight)
-                    .foregroundStyle(.foreground)
-            } else {
-                Rectangle()
-                    .frame(width: segmentWidth, height: segmentHeight)
-                    .foregroundStyle(.foreground)
-                    .overlay(
-                        isChanging ?
-                            Circle()
-                                .stroke(.red, lineWidth: 15)
-                                .frame(width: 50, height: 50)
-                        : nil
-                    )
+                    .aspectRatio(CGSize(width: 10, height: 1), contentMode: .fit)
+                    .foregroundStyle(Color(.label).opacity(0))
+            case .yin:
+                HStack(spacing: 0) {
+                    RoundedRectangle(cornerSize: cornerRadius, style: .continuous)
+                        .aspectRatio(CGSize(width: 3.5, height: 1), contentMode: .fit)
+                        .foregroundStyle(isChanging ? .red : Color(.label))
+                    Rectangle()
+                        .aspectRatio(CGSize(width: 3, height: 1), contentMode: .fit)
+                        .foregroundStyle(.background.opacity(0))
+                    RoundedRectangle(cornerSize: cornerRadius, style: .continuous)
+                        .aspectRatio(CGSize(width: 3.5, height: 1), contentMode: .fit)                    .foregroundStyle(isChanging ? .red : Color(.label))
+                }
+                .aspectRatio(CGSize(width: 10, height: 1), contentMode: .fit)
+            case .yang:
+                RoundedRectangle(cornerSize: cornerRadius, style: .continuous)
+                    .aspectRatio(CGSize(width: 10, height: 1), contentMode: .fit)
+                    .foregroundStyle(isChanging ? .red : Color(.label))
             }
         }
     }
@@ -85,9 +68,14 @@ enum LineType {
 }
 
 #Preview {
-    Line(number: 7)
-    Line(number: 9)
-    Line(number: 8)
-    Line(number: 9)
-    Line(number: 6)
+    VStack(spacing: 0) {
+        Line(number: 9)
+        Line(number: -1)
+        Line(number: 8)
+        Line(number: -1)
+        Line(number: 9)
+        Line(number: -1)
+        Line(number: 6)
+    }
+    .scaledToFill()
 }

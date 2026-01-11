@@ -7,6 +7,7 @@
 
 struct Hexagram {
     var number = -1
+    var symbol = ""
     var name = ""
     var pattern = [-1, -1, -1, -1, -1, -1]
 }
